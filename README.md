@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/jameswhatley/testimonials-grid-section)
-- Live Site URL: [GitHub Pages](https://your-live-site-url.com)
+- Live Site URL: [GitHub Pages](https://jameswhatley.github.io/testimonials-grid-section/)
 
 ## My process
 
