@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  color: rgb(207, 207, 207);
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  color: hsl(210, 46%, 95%);
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+p {
+  color: rgba(207, 207, 207, 0.7);
+}
+
+small {
+  color: rgba(207, 207, 207, 0.5);
+}
+
+.container {
+  display: grid;
+  gap: 2rem;
+  padding-block: 2rem;
+  width: min(95%, 848px);
+  margin-inline: auto;
+}
+
+.card {
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.nameSection {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nameSection img {
+  border-radius: 50%;
+  width: 30px;
+}
+
+.card:nth-of-type(1) {
+  background: hsl(263, 55%, 52%) url("./images/bg-pattern-quotation.svg")
+    no-repeat 90% 10%;
+}
+
+.card:nth-of-type(2) {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.card:nth-of-type(3) {
+  background-color: #fff;
+}
+
+.card:nth-of-type(4) {
+  background-color: hsl(219, 29%, 14%);
+}
+
+.card:nth-of-type(5) {
+  background-color: #fff;
+}
+
+.card:nth-of-type(3) h2,
+.card:nth-of-type(5) h2,
+.card:nth-of-type(3) h3,
+.card:nth-of-type(5) h3 {
+  color: hsl(217, 19%, 35%);
+}
+
+.card:nth-of-type(3) small,
+.card:nth-of-type(5) small {
+  color: rgba(72, 85, 106, 0.5);
+}
+
+.card:nth-of-type(3) p,
+.card:nth-of-type(5) p {
+  color: rgba(72, 85, 106, 0.7);
+}
+
+.card:nth-of-type(4) img {
+  border: 2px solid hsl(263, 55%, 52%);
+}
+
+.card:nth-of-type(1) img {
+  border: 2px solid #b492cb;
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .card:nth-of-type(1) {
+    grid-column: span 2;
+  }
+
+  .card:nth-of-type(4) {
+    grid-column: span 2;
+  }
+
+  .card:nth-of-type(5) {
+    grid-column: 4;
+    grid-row: 1 / span 2;
+  }
+}
